@@ -42,7 +42,7 @@ describe('Cat test', () => {
         expect(res).to.have.status(200);
         expect(res.body.name).to.eql('Vic');
         expect(res.body).to.have.property('_id');
-        expect(res.body.size).to.eql('large');
+        // expect(res.body.size).to.eql('large');
         done();
       });
   });
@@ -108,7 +108,7 @@ describe('Dog test', () => {
         expect(res).to.have.status(200);
         expect(res.body.name).to.eql('Vic');
         expect(res.body).to.have.property('_id');
-        expect(res.body.size).to.eql('large');
+        // expect(res.body.size).to.eql('large');
         done();
       });
   });
