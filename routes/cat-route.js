@@ -2,7 +2,7 @@
 const express = require('express');
 const Cat = require('../schema/cats');
 const bodyParser = require('body-parser').json();
-const jsonParser = bodyParser;
+// const jsonParser = bodyParser;
 
 const catRouter = module.exports = exports = express.Router();
 

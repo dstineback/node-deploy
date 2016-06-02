@@ -12,13 +12,13 @@ const expect = chai.expect;
 const request = chai.request;
 const dbPort = process.env.MONGOLAB_URI;
 
-process.env.MONGOLAB_URI = 'mongodb://localhost/test_db';
+process.env.MONGODB_URI = 'mongodb://localhost/test_db';
 require('../server');
 
 
 describe('Cat test', () => {
   after((done)=> {
-    process.env.MONGOLAB_URI = dbPort;
+    process.env.MONGODB_URI = dbPort;
     mongoose.connection.db.dropDatabase(()=>{
         done();
     });
@@ -84,7 +84,7 @@ describe('Cat test', () => {
 
 describe('Dog test', () => {
   after((done)=> {
-    process.env.MONGOLAB_URI = dbPort;
+    process.env.MONGODB_URI = dbPort;
     mongoose.connection.db.dropDatabase(()=>{
         done();
     });
