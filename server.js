@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const errorHandler = require(__dirname + '/lib/error_handling');
 
-const dbPort = process.env.MONGOLAB_URI || 'mongodb://localhost/dev_db';
+const dbPort = process.env.MONGODB_URI || 'mongodb://localhost/dev_db';
 mongoose.connect('mongodb://localhost/dev_db');
 
 const dogRouter = require(__dirname + '/routes/dog-route');
