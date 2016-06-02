@@ -26,7 +26,7 @@ catRouter.put('/', bodyParser, (req, res, next) => {
   let _id = req.body._id;
   Cat.findOneAndUpdate({_id}, req.body, (err, cat) =>{
     if (err) return next(err);
-    let message = "successfully updated";
+    let message = 'successfully updated';
     res.json({message});
   });
 });

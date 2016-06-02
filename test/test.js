@@ -77,8 +77,8 @@ describe('Cat test', () => {
           expect(res).to.have.status(200);
           expect(res.body.message).to.eql('successfully deleted');
           done();
-        })
-     })
+        });
+     });
   });
 });
 
@@ -143,7 +143,7 @@ describe('Dog test', () => {
           expect(res).to.have.status(200);
           expect(res.body.message).to.eql('successfully deleted');
           done();
-        })
-     })
+        });
+     });
   });
 });

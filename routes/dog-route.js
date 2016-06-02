@@ -26,7 +26,7 @@ dogRouter.put('/', bodyParser, (req, res, next) => {
   let _id = req.body._id;
   Dog.findOneAndUpdate({_id}, req.body, (err, dog) =>{
     if (err) return next(err);
-    let message = "successfully updated";
+    let message = 'successfully updated';
     res.json({message});
   });
 });
