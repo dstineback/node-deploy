@@ -5,8 +5,7 @@ const bodyParser = require('body-parser').json();
 const jsonParser = bodyParser;
 
 const dogRouter = module.exports = exports = express.Router();
-
-
+console.log('test');
 dogRouter.get('/', (req, res, next) => {
   Dog.find({}, (err, dog) => {
     if(err) return next(err);
